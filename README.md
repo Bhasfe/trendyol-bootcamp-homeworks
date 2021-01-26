@@ -1,1 +1,1 @@
-# trendyol-bootcamp-hw-week1
+# Trendyol Data Talent Bootcamp Homeworks
