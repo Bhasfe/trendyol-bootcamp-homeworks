@@ -84,7 +84,7 @@ sealed trait FList[+A] {
   def flatMap[B](flatMapper: A => FList[B]): FList[B] =
     this match {
       case FNil => FNil
-      case FNonNil(head, tail) => ??
+      case FNonNil(head, tail) => flatMapper(head).concat(tail.flatMap(flatMapper))
     }
 
   /**

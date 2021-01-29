@@ -65,9 +65,11 @@ object FListDemo {
 
     // FlatMap
     println("FLATMAP")
-    println(flist1.fold(0)(_ + _))
+    println(flist1.flatMap(x => FList(x+10)))
 
     println("\n")
+
+
 
   }
 }
